@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚀 Space Battle 🎮</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🚀 Space Battle 🎮</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="game-title">🚀 Space Battle 🎮</div>
-    <div class="background-container">
-        <div class="background-emoji" style="top: 10%; left: 15%; color: red;">🚀</div>
-        <div class="background-emoji" style="top: 30%; left: 50%; color: yellow;">☄️</div>
-        <div class="background-emoji" style="top: 60%; left: 80%; color: blue;">🌍</div>
-        <div class="background-emoji" style="top: 80%; left: 20%; color: pink;">🪐</div>
-        <div class="background-emoji" style="top: 50%; left: 10%; color: cyan;">✨</div>
-    </div>
-    <div id="game-container">
-        <div id="score">Score: 0</div>
-        <div id="lives">Lives: 5</div>
-        <img id="player" src="player.png" />
-        <div id="game-over">
-            <h2>GAME OVER!</h2>
-            <p>Final Score: <span id="final-score">0</span></p>
-            <button onclick="location.reload()">Play Again</button>
-        </div>
-    </div>
+  <div id="game-title">🚀 Space Battle 🎮</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+  <div class="background-container">
+    <div class="background-emoji" style="top: 10%; left: 15%; color: red;">🚀</div>
+    <div class="background-emoji" style="top: 30%; left: 50%; color: yellow;">☄️</div>
+    <div class="background-emoji" style="top: 60%; left: 80%; color: blue;">🌍</div>
+    <div class="background-emoji" style="top: 80%; left: 20%; color: pink;">🪐</div>
+    <div class="background-emoji" style="top: 50%; left: 10%; color: cyan;">✨</div>
+  </div>
+
+  <div id="game-container">
+    <div id="score">Score: 0</div>
+    <div id="lives">Lives: 5</div>
+    <img id="player" src="player.png" />
+
+    <div id="game-over">
+      <h2>GAME OVER!</h2>
+      <p>Final Score: <span id="final-score">0</span></p>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Mobile Touch Controls -->
+  <div id="touch-controls">
+    <button id="left-btn">⬅️</button>
+    <button id="shoot-btn">🔫</button>
+    <button id="right-btn">➡️</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
