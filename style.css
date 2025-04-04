@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Bubblegum+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: 'Bubblegum Sans', cursive;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+
+#game-title {
+    font-size: 28px;
+    color: #ff66b2;
+    text-shadow: 2px 2px 5px #ff1493;
+    padding: 20px 0;
+}
+
+#game-container {
+    width: 90vw;
+    max-width: 600px;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    margin: 5vh auto;
+    overflow: hidden;
+    border: 3px solid #ff66b2;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+#player {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 50px;
+}
+
+.player-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.bullet {
+    width: 6px;
+    height: 15px;
+    background: yellow;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.enemy {
+    width: 40px;
+    height: 40px;
+    background: url('https://emojicdn.elk.sh/%F0%9F%91%BE') no-repeat center;
+    background-size: contain;
+    position: absolute;
+}
+
+#score {
+    color: #ff66b2;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#lives {
+    color: #ff66b2;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.background-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.background-emoji {
+    font-size: 50px;
+    position: absolute;
+    opacity: 0.5;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: 3px solid #ff66b2;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    z-index: 100;
+    display: none;
+}
+
+#game-over button {
+    background: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Bubblegum Sans', cursive;
+    margin-top: 10px;
+}
