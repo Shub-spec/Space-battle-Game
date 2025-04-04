@@ -144,5 +144,12 @@ body {
   #touch-controls {
     display: flex;
     justify-content: center;
+    
   }
+
+  #game-container {
+    height: 60vh;
+}
+
+  
 }
