@@ -33,7 +33,7 @@ $(document).ready(function () {
     function shoot() {
       const bullet = $('<div class="bullet"></div>');
       bullet.css({
-        left: parseFloat(player.css('left')) + 22,
+        left: parseFloat(player.css('left')) -5,
         bottom: parseFloat(player.css('bottom')) + 50
       });
       gameContainer.append(bullet);
