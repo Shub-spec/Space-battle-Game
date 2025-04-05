@@ -29,6 +29,8 @@ body {
   border: 3px solid #ff66b2;
   border-radius: 15px;
   z-index: 1;
+  box-sizing: border-box; 
+  padding: 0;
 }
 
 #player {
@@ -40,6 +42,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
   line-height: 50px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+#player-icon{
+  width: 50px;
+  height: 50px;
 }
 
 .bullet {

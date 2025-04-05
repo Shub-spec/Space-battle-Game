@@ -13,8 +13,8 @@ $(document).ready(function () {
   
     $(document).keydown(function (e) {
       if (isGameOver) return;
-      if (e.key === 'ArrowLeft') moveDirection = -5;
-      if (e.key === 'ArrowRight') moveDirection = 5;
+      if (e.key === 'ArrowLeft') moveDirection = -3;
+      if (e.key === 'ArrowRight') moveDirection = 3;
       if (e.key === ' ') shoot();
     });
   
@@ -25,7 +25,7 @@ $(document).ready(function () {
     function movePlayer() {
       const currentLeft = parseFloat(player.css('left'));
       const newLeft = currentLeft + moveDirection;
-      if (newLeft > 0 && newLeft < gameContainer.width() - player.width()) {
+      if (newLeft >= 0 && newLeft <= gameContainer.width() - player.width()) {
         player.css('left', newLeft);
       }
     }
@@ -118,8 +118,8 @@ $(document).ready(function () {
     if (/Mobi|Android/i.test(navigator.userAgent)) {
       $('#touch-controls').show();
   
-      $('#left-btn').on('touchstart', () => moveDirection = -5);
-      $('#right-btn').on('touchstart', () => moveDirection = 5);
+      $('#left-btn').on('touchstart', () => moveDirection = -3);
+      $('#right-btn').on('touchstart', () => moveDirection = 3);
       $('#left-btn, #right-btn').on('touchend', () => moveDirection = 0);
       $('#shoot-btn').on('touchstart', () => shoot());
     }
